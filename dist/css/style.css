@@ -1,0 +1,117 @@
+/* General */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fcfcfc;
+}
+
+/* Scaffolding */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0px, 0px, 0px, 0px);
+  border: 0px none;
+}
+
+/* Nav Bar */
+nav.pure-menu-horizontal {
+  position: relative;
+  min-height: 35px;
+  margin-bottom: 20px;
+  background-color: #cecece;
+}
+
+.pure-menu-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+nav::after, .pure-menu-header::after {
+  clear: both;
+  display: table;
+  content: " ";
+}
+
+.pure-menu-brand {
+  float: left;
+  display: inline;
+  height: 35px;
+}
+
+.pure-menu-toggle {
+  position: relative;
+  float: right;
+  padding: 10px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin-top: 2px;
+  margin-right: 15px;
+  margin-bottom: 2px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+}
+
+.pure-menu-toggle.collapsed {
+  padding: 10px;
+}
+
+.pure-menu-toggle .icon-bar {
+  background-color: #777;
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 100px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.pure-menu-toggle.collapsed .icon-bar {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.pure-menu-toggle.collapsed .icon-bar + .icon-bar {
+  margin-top: 5px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.pure-menu-toggle .icon-bar {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.pure-menu-toggle .icon-bar + .icon-bar {
+  margin-top: -1px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+@media (min-width: 768px) {
+  .pure-menu-header {
+    float: left;
+  }
+
+  .pure-menu-toggle {
+    display: none;
+  }
+}

@@ -1,0 +1,1 @@
+angular.module('uUCI-pico', ['ui.router', 'ngCookies']);

@@ -1,0 +1,12 @@
+{
+    "name": "uUCI-pico",
+    "version": "0.0.1",
+    "author": "Nicolò Veronese",
+    "contributors": [
+        "Federico Cappon <federico@greenteadev.com.com> (greenteadev.com.com)"
+    ],
+    "devDependencies": {
+        "bower": "*",
+        "gulp": "*"
+    }
+}
