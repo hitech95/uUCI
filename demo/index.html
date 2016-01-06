@@ -1,48 +1,56 @@
 <!doctype html>
 <html lang="en" ng-app="uUCI-pico">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Router OpenWRT - uUCI</title>
+    <title>Router OpenWRT - uUCI</title>
 
-	<link rel="stylesheet" type="text/css" href="../dist/assets/pure/pure-min.css">
-	<link rel="stylesheet" type="text/css" href="../dist/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../dist/assets/pure/pure-min.css">
+    <link rel="stylesheet" type="text/css" href="../dist/css/style.css">
 
-	<!--script type="text/javascript" src="../dist/assets/angular/angular.min.js"></script>
-	<script type="text/javascript" src="../dist/assets/angular/angular-cookies.min.js"></script>
-	<script type="text/javascript" src="../dist/assets/angular/angular-ui-router.min.js"></script-->
+    <!--script type="text/javascript" src="../dist/assets/angular/angular.min.js"></script>
+    <script type="text/javascript" src="../dist/assets/angular/angular-cookies.min.js"></script>
+    <script type="text/javascript" src="../dist/assets/angular/angular-ui-router.min.js"></script-->
 </head>
 <body ng-controller="MasterCtrl">
-	<nav class="pure-menu pure-menu-horizontal">
-		<div class="pure-menu-container">
-			<div class="pure-menu-header">
-				<button type="button" class="pure-menu-toggle collapsed">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="pure-menu-link pure-menu-brand" href="#">Router OpenWRT</a>
-			</div>
-			<ul class="pure-menu-list">
-				<li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-					<a href="#status" class="pure-menu-link">Status</a>
-					<ul class="pure-menu-children">
-						<li class="pure-menu-item"><a href="#status" class="pure-menu-link">Dashboard</a></li>
-						<li class="pure-menu-item"><a href="#status_kernel" class="pure-menu-link">Kernel Status</a></li>
-						<li class="pure-menu-item"><a href="#status_system" class="pure-menu-link">System Status</a></li>
-						<li class="pure-menu-item"><a href="#status_xdsl" class="pure-menu-link">xDSL Status</a></li>
-						<li class="pure-menu-item"><a href="#status_apps" class="pure-menu-link">Services Status</a></li>
-						<li class="pure-menu-item"><a href="#" class="pure-menu-link">Graph</a></li>
-					</ul>
-				</li>
-				<li class="pure-menu-item"><a href="#system" class="pure-menu-link">System</a></li>
-				<li class="pure-menu-item"><a href="#network" class="pure-menu-link">Network</a></li>
-				<li class="pure-menu-item"><a href="#" class="pure-menu-link">Software</a></li>
-			</ul>
-		</div>
-	</nav>
+<nav class="pure-navbar pure-navbar-themed">
+    <div class="container">
+        <div class="pure-navbar-header">
+            <button type="button" class="pure-navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="pure-navbar-brand" href="#">Router OpenWRT</a>
+        </div>
+        <div id="navbar" class="pure-menu pure-navbar-collapse collapse">
+            <ul class="pure-navbar-nav pure-menu-list">
+                <li class="pure-menu-item pure-menu-has-children">
+                    <a href="#status" class="pure-menu-link" data-toggle="pure-menu-has-children" aria-haspopup="true" aria-expanded="true">Status</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item"><a href="#status" class="pure-menu-link">Dashboard</a></li>
+                        <li class="pure-menu-item"><a href="#status_kernel" class="pure-menu-link">Kernel Status</a>
+                        </li>
+                        <li class="pure-menu-item"><a href="#status_system" class="pure-menu-link">System Status</a>
+                        </li>
+                        <li class="pure-menu-item"><a href="#status_xdsl" class="pure-menu-link">xDSL Status</a></li>
+                        <li class="pure-menu-item"><a href="#status_apps" class="pure-menu-link">Services Status</a>
+                        </li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Graph</a></li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item"><a href="#system" class="pure-menu-link">System</a></li>
+                <li class="pure-menu-item"><a href="#network" class="pure-menu-link">Network</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Software</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-	<p>Text as example</p>
+<p>Text as example</p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>
