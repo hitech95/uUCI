@@ -175,9 +175,9 @@ grunt.loadNpmTasks('grunt-stripmq');
 // Local tasks.
 grunt.loadTasks('./bower_components/purecss/tasks/');
 
-grunt.registerTask('default', ['import', 'build']);
-grunt.registerTask('import', ['bower_install']);
-grunt.registerTask('build', [
+grunt.registerTask('default', ['import-purecss', 'build-purecss']);
+grunt.registerTask('import-purecss', ['bower_install']);
+grunt.registerTask('build-purecss', [
     'clean:build',
 	'clean:dist',
     'copy:build',
